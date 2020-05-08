@@ -5,11 +5,20 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    http: {
+      url: "url"
+    }
   },
+  getters: {
+    http: state => state.http
+  },
+
   mutations: {
   },
+
   actions: {
   },
+
   modules: {
   }
 })
