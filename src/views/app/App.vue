@@ -8,6 +8,24 @@
     </div>
     <router-view/>
 
+    <!-- Left side bar -->
+    <app-side-bar>
+      <nav slot="sidebar">
+        <div slot="commands">
+          <div v-on:click="dialogLang()">Language</div>
+        </div>
+      </nav>
+    </app-side-bar>
+
+    <!-- choose language -->
+    <app-dialog>
+        <div slot="dialog-id" class="dialog-lang">
+          <div slot="dialog-container">
+            <div slot="content">Language dialog</div>
+          </div>
+        </div>
+    </app-dialog>
+
     <!-- Bottom nav-bar-->
     <app-nav-bar>
       <nav slot="menu">

@@ -1,0 +1,10 @@
+.app-dialog [slot="dialog-container"] {
+    min-width: 100%;
+    min-height: 150px;
+    visibility: hidden;
+    background-color: darkgreen;
+}
+
+.app-dialog [slot="dialog-container"].show {
+    visibility: visible;
+}
