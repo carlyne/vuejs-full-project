@@ -1,4 +1,5 @@
 // helper function :
+
 // $margins: (
 //     menu: (
 //         bottom: 50px
@@ -8,6 +9,29 @@
 //     @return map-get(map-get($parent, $child, $item));
 // }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: aquamarine;
+    width: 100%;
+    height: auto;
 }
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        margin: 10px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}   
+
