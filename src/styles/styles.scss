@@ -9,6 +9,9 @@
 //     @return map-get(map-get($parent, $child, $item));
 // }
 
+
+/* reset */
+
 * {
     box-sizing: border-box;
 }
@@ -26,15 +29,29 @@ ul {
 
     li {
         display: inline-block;
-        margin: 10px;
+        margin: 0;
+        padding: 10px;
     }
 }
 
 a {
     text-decoration: none;
     color: inherit;
-}   
+    margin: 0;
+    padding: 10px;
+}
 
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 10px;
+}
+
+aside, 
+img, 
+section {
+    margin: 0;
+    padding: 0;
+}
 
 button {
     margin: 5px;
@@ -45,3 +62,37 @@ button {
     border-radius: 5px;
 }
 
+
+/* grid */
+
+.view-grid {
+    display: flex;
+
+    &.v-row {
+        flex-direction: row;
+        
+        &.v-center {
+            justify-content: center;
+        }
+        &.v-around {
+            justify-content: space-around;
+        }
+    }
+
+    &.v-column {
+        flex-direction: column;
+
+        &.v-center {
+            justify-content: center;
+        }
+        &.v-start {
+            justify-content: flex-start;
+        }
+        &.v-end {
+            justify-content: flex-end;
+        }
+    }
+}
+
+@import "../views/views";
+@import "../components/components";
