@@ -3,7 +3,7 @@
     <h1>This is an about page</h1>
 
     <main class="view-grid v-row v-center">
-      <figure>
+      <figure class="img-box">
         <img src="https://cataas.com/cat?w=500&amp;h=500" alt="photo">
       </figure>
 
