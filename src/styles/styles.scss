@@ -47,7 +47,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 aside, 
-img, 
+img,
+figure, 
 section {
     margin: 0;
     padding: 0;
@@ -70,7 +71,7 @@ button {
 
     &.v-row {
         flex-direction: row;
-        
+
         &.v-center {
             justify-content: center;
         }
