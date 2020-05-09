@@ -8,3 +8,12 @@
 .app-dialog [slot="dialog-container"].show {
     visibility: visible;
 }
+
+.app-dialog [slot="content"] .en-btn {
+    background-color: yellow;
+} 
+
+.app-dialog [slot="content"] .fr-btn {
+    background-color: blue;
+    color: white;
+} 

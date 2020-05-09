@@ -1,7 +1,10 @@
 import en from './en';
+import fr from './fr';
+
 
 const messages = {
-    en: en
+    en: en,
+    fr: fr
 };
 
 export default messages;

@@ -12,13 +12,23 @@ export default {
 
     // when DOM is loaded
     mounted() {
+        this.currentLang = this.$i18n.locale;
         this.dialogs = {};
         this.dialogs.lang = document.querySelector('.app-dialog .dialog-lang [slot="dialog-container"]');
     },
 
     methods: {
         dialogLang: function() {
-            this.dialogs.lang.classList.toggle('show');
+            // faire transiter un evenement entre deux composants
+            this.$bus.$emit('dialog-close', {
+                dialog: this.dialogs.lang
+            });
+        },
+
+        // Changer la langue grâce à i18n
+        changeLang(lang) {
+            this.$i18n.locale = lang;
+            this.currentLang = lang;
         }
     }
 }

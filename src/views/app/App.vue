@@ -21,7 +21,16 @@
     <app-dialog>
         <div slot="dialog-id" class="dialog-lang">
           <div slot="dialog-container">
-            <div slot="content">Language dialog</div>
+
+            <div slot="header-bar" 
+                 class="command-close" 
+                 v-on:click="dialogLang()">X</div>
+
+            <!-- texte traduit avec $t -->
+            <div slot="content">
+              <button v-on:click="changeLang('en')" class="en-btn">{{$t("common.language.en")}}</button>
+              <button v-on:click="changeLang('fr')" class="fr-btn">{{$t("common.language.fr")}}</button>
+            </div>
           </div>
         </div>
     </app-dialog>
