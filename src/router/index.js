@@ -1,7 +1,9 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/home/Home.vue'
-import Contact from '../views/contact/Contact.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '../views/home/Home.vue';
+import Contact from '../views/contact/Contact.vue';
+import Skills from '../views/skills/Skills.vue';
+import SkillDetail from '../views/skills/SkillDetail.vue';
 
 Vue.use(VueRouter)
 
@@ -23,6 +25,16 @@ Vue.use(VueRouter)
     path: '/contact',
     name: 'Contact',
     component: Contact
+  },
+  {
+    path: '/skills',
+    name: 'Skills',
+    component: Skills
+  },
+  {
+    path: '/skills/:id',
+    name: 'skill-detail',
+    component: SkillDetail
   }
 ]
 
